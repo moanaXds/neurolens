@@ -92,24 +92,32 @@ It returns:  🐺🌨️ — the closest matching images in the dataset
 
 **Goal:** Given an image, retrieve the most visually similar images from the dataset.
 
-**How it works:**
-- Every image is passed through CLIP's vision encoder → produces a `512-d` float vector
-- All vectors are stored in Pinecone / MongoDB Atlas
-- A query image is encoded → cosine similarity search is performed
-- Top-K nearest neighbors are returned and displayed
-
 **Output:**
 </details>
 
 <img width="1412" height="746" alt="image" src="https://github.com/user-attachments/assets/a5313084-bb8f-4aaf-ab79-f831bf92e03f" />
 
+
 <details>
 <summary><b>🏷️ Task 2 — Zero-Shot Classification via KNN</b></summary>
-...
+
+<br/>
+
+**Goal:** Classify an unknown image without training a classifier.
+
+**Output:**
 </details>
 
 <img width="1384" height="868" alt="image" src="https://github.com/user-attachments/assets/41fbdc83-971f-478f-985a-b6576dffb064" />
 
+
+<details>
+<summary><b>💬 Task 3 — Cross-Modal Search (Text → Image)</b></summary>
+  
+**Output:**
+</details>
+
+<img width="627" height="1568" alt="image" src="https://github.com/user-attachments/assets/6369d23c-fd0c-42f8-8d0f-41c33069c103" />
 
 ## ✦ Tech Stack
 
