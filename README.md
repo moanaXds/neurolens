@@ -99,66 +99,17 @@ It returns:  🐺🌨️ — the closest matching images in the dataset
 - Top-K nearest neighbors are returned and displayed
 
 **Output:**
-
-![Task 1 — Image Similarity Search]
-<img width="1412" height="746" alt="image" src="https://github.com/user-attachments/assets/a5313084-bb8f-4aaf-ab79-f831bf92e03f" />
-
-> Query: `Dog/0200.jpg` · Top-5 results all retrieved as `Dog` with cosine scores ranging **0.8568 – 0.8787**
-
 </details>
+
+<img width="1412" height="746" alt="image" src="https://github.com/user-attachments/assets/a5313084-bb8f-4aaf-ab79-f831bf92e03f" />
 
 <details>
 <summary><b>🏷️ Task 2 — Zero-Shot Classification via KNN</b></summary>
+...
+</details>
 
-<br/>
-
-**Goal:** Classify an unknown image without training a classifier.
-
-**How it works:**
-- Each stored vector has an associated label (`cat`, `dog`, `wolf`, etc.)
-- For a new query image, retrieve top-K nearest neighbors
-- Apply majority voting over neighbor labels → predicted class
-
-**Output:**
-
-![Task 2 — KNN Classification]
 <img width="1384" height="868" alt="image" src="https://github.com/user-attachments/assets/41fbdc83-971f-478f-985a-b6576dffb064" />
 
-> Query: `Cat/0060.jpg` · Predicted **Cat** at **100% confidence** across K=3, K=5, and K=7 — all 7 neighbors returned `Cat`
-
-</details>
-
-<details>
-<summary><b>💬 Task 3 — Cross-Modal Search (Text → Image)</b></summary>
-
-<br/>
-
-**Goal:** Search images using plain English text queries.
-
-**How it works:**
-- CLIP's text encoder converts a string query into a `512-d` vector
-- This lives in the **same embedding space** as image vectors
-- Cosine similarity retrieves the best image matches for the text
-
-**Example Queries:**
-```
-"wolf in snow"    → returns snowy wolf images
-"cute puppy"      → returns close-up dog images  
-"black cat"       → returns dark-colored cat images
-```
-
-**Output:**
-
-![Task 3 — Cross-Modal Text → Image Search]
-<img width="627" height="1568" alt="image" src="https://github.com/user-attachments/assets/6369d23c-fd0c-42f8-8d0f-41c33069c103" />
-
-> Queries tested: `"a cat sitting"` · `"a large elephant"` · `"a dog running"` · `"a colorful butterfly"` · `"a horse in a field"` · `"a spider on a web"` · `"fluffy sheep on a farm"` — all returned **100% class-correct** top-5 results
-
-</details>
-
-<br/>
-
----
 
 ## ✦ Tech Stack
 
