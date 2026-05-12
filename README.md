@@ -312,8 +312,6 @@ Range: `[-1, 1]` → closer to `1` = more similar.
 
 ---
 
-Built for **Database Systems Lab 14** · FAST NUCES Islamabad · Spring 2026
-
 [![GitHub](https://img.shields.io/badge/GitHub-moanaXds-181717?style=flat-square&logo=github)](https://github.com/moanaXds)
 
 <br/>
