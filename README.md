@@ -100,7 +100,8 @@ It returns:  🐺🌨️ — the closest matching images in the dataset
 
 **Output:**
 
-![Task 1 — Image Similarity Search](assets/task1_similarity_output.png)
+![Task 1 — Image Similarity Search]
+<img width="1412" height="746" alt="image" src="https://github.com/user-attachments/assets/a5313084-bb8f-4aaf-ab79-f831bf92e03f" />
 
 > Query: `Dog/0200.jpg` · Top-5 results all retrieved as `Dog` with cosine scores ranging **0.8568 – 0.8787**
 
@@ -120,7 +121,8 @@ It returns:  🐺🌨️ — the closest matching images in the dataset
 
 **Output:**
 
-![Task 2 — KNN Classification](assets/task2_knn_output.png)
+![Task 2 — KNN Classification]
+<img width="1384" height="868" alt="image" src="https://github.com/user-attachments/assets/41fbdc83-971f-478f-985a-b6576dffb064" />
 
 > Query: `Cat/0060.jpg` · Predicted **Cat** at **100% confidence** across K=3, K=5, and K=7 — all 7 neighbors returned `Cat`
 
@@ -147,7 +149,8 @@ It returns:  🐺🌨️ — the closest matching images in the dataset
 
 **Output:**
 
-![Task 3 — Cross-Modal Text → Image Search](assets/task3_crossmodal_output.png)
+![Task 3 — Cross-Modal Text → Image Search]
+<img width="627" height="1568" alt="image" src="https://github.com/user-attachments/assets/6369d23c-fd0c-42f8-8d0f-41c33069c103" />
 
 > Queries tested: `"a cat sitting"` · `"a large elephant"` · `"a dog running"` · `"a colorful butterfly"` · `"a horse in a field"` · `"a spider on a web"` · `"fluffy sheep on a farm"` — all returned **100% class-correct** top-5 results
 
@@ -206,56 +209,7 @@ neurolens/
 │   └── wolves/
 ```
 
-### 5. Run
-
-```bash
-# Task 1: Image Similarity
-jupyter notebook notebooks/task1_similarity.ipynb
-
-# Task 2: KNN Classification
-jupyter notebook notebooks/task2_classification.ipynb
-
-# Task 3: Cross-Modal Search
-jupyter notebook notebooks/task3_crossmodal.ipynb
-```
-
-<br/>
-
----
-
-## ✦ Project Structure
-
-```
-neurolens/
-│
-├── notebooks/
-│   ├── task1_similarity.ipynb       # Image similarity search
-│   ├── task2_classification.ipynb   # KNN classification
-│   └── task3_crossmodal.ipynb       # Text → Image search
-│
-├── src/
-│   ├── embeddings.py                # CLIP encoding logic
-│   ├── pinecone_store.py            # Pinecone upsert + query
-│   ├── mongodb_store.py             # Atlas vector search
-│   └── visualize.py                 # Result display utilities
-│
-├── assets/
-│   ├── task1_similarity_output.png  # Task 1 screenshot
-│   ├── task2_knn_output.png         # Task 2 screenshot
-│   └── task3_crossmodal_output.png  # Task 3 screenshot
-│
-├── dataset/                         # Animal images (local)
-├── report/
-│   └── lab14_report.pdf             # Submission report
-│
-├── .env.example
-├── requirements.txt
-└── README.md
-```
-
-<br/>
-
----
+### 5. Run .ipynp
 
 ## ✦ Key Concepts
 
@@ -304,7 +258,6 @@ Range: `[-1, 1]` → closer to `1` = more similar.
 
 ---
 
-Built for **Database Systems Lab 14** · FAST NUCES Islamabad · Spring 2026
 
 [![GitHub](https://img.shields.io/badge/GitHub-moanaXds-181717?style=flat-square&logo=github)](https://github.com/moanaXds)
 
